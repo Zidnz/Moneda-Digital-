@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="Imagenes\IconoQchau.png">
+    <link rel="stylesheet" href="styles-security.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="scripts.js" defer></script>
+    <title>QchauCoin - Moneda Estable</title>
+</head>
+<body>
+   <header>
+        <button id="open-sidebar-button" onclick="openSidebar()" aria-label="open sidebar" aria-expanded="false" aria-controls="navbar">
+            <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#c9c9c9"><path d="M165.13-254.62q-10.68 0-17.9-7.26-7.23-7.26-7.23-18t7.23-17.86q7.22-7.13 17.9-7.13h629.74q10.68 0 17.9 7.26 7.23 7.26 7.23 18t-7.23 17.87q-7.22 7.12-17.9 7.12H165.13Zm0-200.25q-10.68 0-17.9-7.27-7.23-7.26-7.23-17.99 0-10.74 7.23-17.87 7.22-7.13 17.9-7.13h629.74q10.68 0 17.9 7.27 7.23 7.26 7.23 17.99 0 10.74-7.23 17.87-7.22 7.13-17.9 7.13H165.13Zm0-200.26q-10.68 0-17.9-7.26-7.23-7.26-7.23-18t7.23-17.87q7.22-7.12 17.9-7.12h629.74q10.68 0 17.9 7.26 7.23 7.26 7.23 18t-7.23 17.86q-7.22 7.13-17.9 7.13H165.13Z"/></svg>
+        </button>
+
+        <nav id="navbar">
+            <ul>
+                <li>
+                    <button id="close-sidebar-button" onclick="closeSidebar()" aria-label="close sidebar">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#c9c9c9"><path d="m480-444.62-209.69 209.7q-7.23 7.23-17.5 7.42-10.27.19-17.89-7.42-7.61-7.62-7.61-17.7 0-10.07 7.61-17.69L444.62-480l-209.7-209.69q-7.23-7.23-7.42-17.5-.19-10.27 7.42-17.89 7.62-7.61 17.7-7.61 10.07 0 17.69 7.61L480-515.38l209.69-209.7q7.23-7.23 17.5-7.42 10.27-.19 17.89 7.42 7.61 7.62 7.61 17.7 0 10.07-7.61 17.69L515.38-480l209.7 209.69q7.23 7.23 7.42 17.5.19 10.27-7.42 17.89-7.62 7.61-17.7 7.61-10.07 0-17.69-7.61L480-444.62Z"/></svg>
+                    </button>
+                </li>
+                <li class="home-li"><a href="index.html">QchauCoin</a></li>
+                <li><a href="marcolegal.html">Marco Legal</a></li>
+                <li><a href="security.html">Seguridad</a></li>
+                <li><a href="walletInfo.html">¿Wallet?</a></li>
+                <li><a class="active-link" aria-current="page" href="Volatilidad.html">¿StableCoins?</a></li> <li><a class="accent-link" href="walletInfo.html">Login</a></li>
+            </ul>
+        </nav>
+
+        <div id="overlay" onclick="closeSidebar()" aria-hidden="true"></div>
+    </header>
+
+<main class="hero-section">
+    <div class="container hero-content">
+        <div class="text-content">
+            <h1>Dinero digital para uso diario</h1>
+            <p>Las stablecoins son un tipo de criptomoneda cuyo objetivo es mantener un valor constante. A diferencia de otras monedas digitales como Bitcoin o Ethereum, que pueden experimentar grandes oscilaciones de precio, las stablecoins están respaldadas por activos estables, como el dólar estadounidense o el oro.</p>
+            <div class="buttons">
+                <a href="#" class="btn primary-btn">Cómo funcionan</a>
+            </div>
+        </div>
+        <div class="image-content">
+            <img src="Imagenes/stablemain.png" alt="Ilustración de monedas estables">
+        </div>
+    </div>
+</main>
+
+<section class="content-sections">
+    <div class="container">
+        <div class="section-block">
+            <h2><i class="bx bx-coin-stack"></i> ¿Qué son las Stablecoins?</h2>
+            <div class="content-two-columns"> 
+                <div class="text-and-features-column">
+                    <p>Las monedas estables son globales y se pueden enviar a través de Internet. Son fáciles de recibir o enviar una vez que tiene una cuenta de QchauCoin.</p>
+                    <div class="feature-grid feature-list-grid"> <div class="feature-item">
+                            <i class="bx bx-world"></i>
+                            <p>Las monedas estables son globales y se pueden enviar a través de Internet. Son fáciles de recibir o enviar una vez que tiene una cuenta de QchauCoin</p>
+                        </div>
+                        <div class="feature-item">
+                            <i class="bx bx-trending-up"></i>
+                            <p>La demanda de monedas estables es alta, por lo que puede ganar intereses por prestar las suyas. Asegúrese de que es consciente de los riesgos antes de prestarlas.</p>
+                        </div>
+                        <div class="feature-item">
+                            <i class="bx bx-bolt-circle"></i>
+                            <p>Las monedas estables se pueden cambiar por BTC y otros tokens de QchauCoins. Muchas DApps dependen de las monedas estables.</p>
+                        </div>
+                        <div class="feature-item">
+                            <i class="bx bx-key"></i>
+                            <p>Las monedas estables están protegidas por criptografía. Nadie puede forjar transacciones en su nombre.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="image-column">
+                    <img src="Imagenes\stable.png" alt="Ilustración de Stablecoins" class="img-responsive">
+                </div>
+            </div>
+        </div>
+        </div>
+</section>
+
+<div class="section-block">
+    <h2><i class="bx bx-line-chart"></i> Mejores monedas estables por capitalización de mercado</h2>
+    <div class="table-responsive">
+        <table class="stablecoin-table">
+            <thead>
+                <tr>
+                    <th>Moneda</th>
+                    <th>Capitalización de mercado</th>
+                    <th>Tipo de garantía</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td data-label="Moneda"><i class="bx bx-dollar-circle coin-icon"></i> Tether</td>
+                    <td data-label="Capitalización de mercado">$151,387,654,199</td>
+                    <td data-label="Tipo de garantía">Dinero fiduciario</td>
+                    <td data-label="Acción"><a href="#" class="btn secondary-btn small-btn">Ir a Tether</a></td>
+                </tr>
+                <tr>
+                    <td data-label="Moneda"><i class="bx bx-dollar-circle coin-icon"></i> USDC</td>
+                    <td data-label="Capitalización de mercado">$60,564,979,133</td>
+                    <td data-label="Tipo de garantía">Dinero fiduciario</td>
+                    <td data-label="Acción"><a href="#" class="btn secondary-btn small-btn">Ir a USDC</a></td>
+                </tr>
+                <tr>
+                    <td data-label="Moneda"><i class="bx bx-dollar-circle coin-icon"></i> Dai</td>
+                    <td data-label="Capitalización de mercado">$3,649,711,833</td>
+                    <td data-label="Tipo de garantía">Criptomoneda</td>
+                    <td data-label="Acción"><a href="#" class="btn secondary-btn small-btn">Ir a Dai</a></td>
+                </tr>
+                <tr>
+                    <td data-label="Moneda"><i class="bx bx-dollar-circle coin-icon"></i> PAX Gold</td>
+                    <td data-label="Capitalización de mercado">$774,441,327</td>
+                    <td data-label="Tipo de garantía">Metales preciosos</td>
+                    <td data-label="Acción"><a href="#" class="btn secondary-btn small-btn">Ir a PAX Gold</a></td>
+                </tr>
+                <tr>
+                    <td data-label="Moneda"><i class="bx bx-dollar-circle coin-icon"></i> Stables Labs USDX</td>
+                    <td data-label="Capitalización de mercado">$627,364,441</td>
+                    <td data-label="Tipo de garantía">Criptomoneda</td>
+                    <td data-label="Acción"><a href="#" class="btn secondary-btn small-btn">Ir a Stables Labs USDX</a></td>
+                </tr>
+                <tr>
+                    <td data-label="Moneda"><i class="bx bx-dollar-circle coin-icon"></i> TrueUSD</td>
+                    <td data-label="Capitalización de mercado">$496,611,193</td>
+                    <td data-label="Tipo de garantía">Dinero fiduciario</td>
+                    <td data-label="Acción"><a href="#" class="btn secondary-btn small-btn">Ir a TrueUSD</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<section class="content-sections">
+    <div class="container">
+        <div class="section-block">
+            <h2><i class="bx bx-compass"></i> ¿Por qué son importantes?</h2>
+            <div class="content-two-columns">
+                <div class="text-and-features-column">
+                    <p>Las stablecoins permiten realizar transacciones digitales rápidas y económicas, manteniendo el valor estable de las monedas tradicionales. Son ideales para pagos, ahorro digital y transferencias internacionales sin la volatilidad del mercado cripto. </p>
+                    <p><span class="highlight-text">Ventajas exclusivas de QchauCoin para México:</span> Respaldo híbrido seguro: 70% en pesos mexicanos (MXN) y 30% en dólares (USD), combinando la estabilidad local con la fortaleza de una divisa global. Reduce riesgos de devaluación y ofrece mayor confianza en comparación con stablecoins 100% vinculadas a una sola moneda.</p>
+                </div>
+                <div class="image-column">
+                    <img src="Imagenes/stableC.png" alt="Representación visual de la importancia de las stablecoins" class="img-responsive">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+ <section class="content-sections">
+    <div class="container">
+        <div class="section-block">
+            <h2><i class="bx bx-check-circle"></i> Ventajas y riesgos</h2>
+            <div class="advantages-risks-grid">
+                <div class="advantages-box">
+                    <h3 class="advantages-subheading"><i class="bx bx-check-circle"></i> Ventajas:</h3>
+                    <ul class="article-list">
+                        <li class="article-list-item"><i class="bx bx-check"></i> Estabilidad de precio</li>
+                        <li class="article-list-item"><i class="bx bx-check"></i> Transacciones rápidas y globales</li>
+                        <li class="article-list-item"><i class="bx bx-check"></i> Bajas comisiones</li>
+                        <li class="article-list-item"><i class="bx bx-check"></i> Integración con otras aplicaciones DeFi</li>
+                    </ul>
+                </div>
+
+                <div class="risks-box">
+                    <h3 class="risks-subheading"><i class="bx bx-error-circle"></i> Riesgos:</h3>
+                    <ul class="article-list">
+                        <li class="article-list-item"><i class="bx bx-x"></i> Falta de regulación en algunos países</li>
+                        <li class="article-list-item"><i class="bx bx-x"></i> Riesgo de respaldo insuficiente</li>
+                        <li class="article-list-item"><i class="bx bx-x"></i> Pérdida de acceso si no se protege bien la wallet</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+<section class="content-sections">
+    <div class="container">
+        <div class="section-block">
+            <h2><i class="bx bx-line-chart"></i> ¿Qué dificultades han enfrentado las criptomonedas?</h2>
+            <div class="article-block">
+                <p class="article-paragraph">
+                    Las criptomonedas han enfrentado grandes desafíos desde sus inicios. Su alta volatilidad ha sido un problema constante, con caídas repentinas que han afectado a muchos inversionistas, como el caso de TerraLUNA en 2022 que hizo desaparecer 40 mil millones de dólares en pocos días.
+                </p>
+                <p class="article-paragraph">
+                    Entre los principales obstáculos destacan: la regulación restrictiva en países como China y Estados Unidos.
+                </p>
+                <p class="article-paragraph">
+                    A pesar de estas dificultades, las criptomonedas han demostrado un avance importante. La tecnología blockchain ha permitido innovaciones como los contratos inteligentes de Ethereum y los sistemas financieros descentralizados (DeFi). Su uso como alternativa en países con alta inflación y el interés de grandes empresas como BlackRock muestran que, aunque todavía generan debate, están ganando un espacio en el sistema financiero global.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+</body>
+
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-section footer-about">
+            <h3 class="footer-title">QchauCoin</h3>
+            <p>
+                La stablecoin innovadora para la economía mexicana, ofreciendo estabilidad y transparencia en tus transacciones.
+            </p>
+        </div>
+
+        <div class="footer-section footer-links">
+            <h3 class="footer-title">Enlaces Rápidos</h3>
+            <ul>
+                <li><a href="index.html">¿Qué es QchauCoin?</a></li>
+                <li><a href="volatilidad.html">Volatilidad</a></li>
+                <li><a href="marcolegal.html">Marco Legal</a></li>
+                <li><a href="security.html">Blockchain y Seguridad</a></li>
+                <li><a href="wallets.html">Wallets</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section footer-contact">
+            <h3 class="footer-title">Contacto</h3>
+            <p>Email: info@qchaucoin.com</p>
+            <p>Teléfono: +52 55 1234 5678</p>
+            <p>Dirección: Radiador Springs, Ruta 66., Ciudad de México, México</p>
+        </div>
+
+        <div class="footer-section footer-social">
+            <h3 class="footer-title">Equipo Conformado por:</h3>
+            <div class="social-icons">
+                <p>Erika Anaya</p>
+                <p>Omar Gutiérrez</p>
+                <p>Ximena Leon</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>&copy; 2025 QchauCoin. Todos los derechos reservados.</p>
+        <div class="footer-legal-links">
+            <a href="#">Política de Privacidad</a>
+            <a href="#">Términos de Servicio</a>
+        </div>
+    </div>
+</footer>
+
+</html>

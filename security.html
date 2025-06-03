@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="Imagenes/IconoQchau.png">
+    <title>QchauCoin - Seguridad y Privacidad</title>
+    <link rel="stylesheet" href="styles-security.css"> 
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+     <script src="scripts.js" defer></script>
+</head>
+<body>
+   <header>
+        <button id="open-sidebar-button" onclick="openSidebar()" aria-label="open sidebar" aria-expanded="false" aria-controls="navbar">
+            <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#c9c9c9"><path d="M165.13-254.62q-10.68 0-17.9-7.26-7.23-7.26-7.23-18t7.23-17.86q7.22-7.13 17.9-7.13h629.74q10.68 0 17.9 7.26 7.23 7.26 7.23 18t-7.23 17.87q-7.22 7.12-17.9 7.12H165.13Zm0-200.25q-10.68 0-17.9-7.27-7.23-7.26-7.23-17.99 0-10.74 7.23-17.87 7.22-7.13 17.9-7.13h629.74q10.68 0 17.9 7.27 7.23 7.26 7.23 17.99 0 10.74-7.23 17.87-7.22 7.13-17.9 7.13H165.13Zm0-200.26q-10.68 0-17.9-7.26-7.23-7.26-7.23-18t7.23-17.87q7.22-7.12 17.9-7.12h629.74q10.68 0 17.9 7.26 7.23 7.26 7.23 18t-7.23 17.86q-7.22 7.13-17.9 7.13H165.13Z"/></svg>
+        </button>
+
+        <nav id="navbar">
+            <ul>
+                <li>
+                    <button id="close-sidebar-button" onclick="closeSidebar()" aria-label="close sidebar">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#c9c9c9"><path d="m480-444.62-209.69 209.7q-7.23 7.23-17.5 7.42-10.27.19-17.89-7.42-7.61-7.62-7.61-17.7 0-10.07 7.61-17.69L444.62-480l-209.7-209.69q-7.23-7.23-7.42-17.5-.19-10.27 7.42-17.89 7.62-7.61 17.7-7.61 10.07 0 17.69 7.61L480-515.38l209.69-209.7q7.23-7.23 17.5-7.42 10.27-.19 17.89 7.42 7.61 7.62 7.61 17.7 0 10.07-7.61 17.69L515.38-480l209.7 209.69q7.23 7.23 7.42 17.5.19 10.27-7.42 17.89-7.62 7.61-17.7 7.61-10.07 0-17.69-7.61L480-444.62Z"/></svg>
+                    </button>
+                </li>
+                <li class="home-li"><a href="index.html">QchauCoin</a></li>
+                <li><a href="marcolegal.html">Marco Legal</a></li>
+                <li><a href="Volatilidad.html">¿StableCoins?</a></li>
+                <li><a href="walletInfo.html">¿Wallet?</a></li>
+                <li><a class="active-link" aria-current="page" href="security.html">Seguridad</a></li> <li><a class="accent-link" href="login.html">Login</a></li>
+            </ul>
+        </nav>
+
+        <div id="overlay" onclick="closeSidebar()" aria-hidden="true"></div>
+    </header>
+
+    <main class="seguridad-privacidad-page">
+        <section class="hero-section">
+            <div class="container hero-content">
+                <div class="text-content">
+                    <h1>Seguridad y Privacidad en QchauCoin</h1>
+                    <p>Tu control, nuestra protección: Entiende cómo salvaguardamos tus activos y datos.</p>
+                    <div class="buttons">
+                        <a href="#section-keys" class="btn primary-btn">Cómo funcionan</a> </div>
+                </div>
+                <div class="image-content">
+                    <img src="Imagenes/securitymain.png" alt="Icono de Seguridad">
+                </div>
+            </div>
+        </section>
+
+<section class="content-sections">
+    <div class="container">
+        <div class="section-block" id="section-keys">
+            <h2>1. Tus Claves Criptográficas: Tu Principal Activo</h2>
+            <div class="feature-grid">
+                <div class="feature-item">
+                    <i class='bx bxs-key'></i>
+                    <h3>Clave Privada: ¡Tu Única Llave!</h3>
+                    <p>Tu clave privada es como la firma secreta que te permite autorizar y enviar tus QchauCoins. <span class="strong-highlight">QchauCoin NUNCA almacena ni tiene acceso a tu clave privada.</span></p>
+                    <ul>
+                        <li><span class="strong-highlight">Guárdala en un lugar SEGURO:</span> Al registrarte, descargas un archivo `.pem`. Guárdalo muy bien (USB cifrado, gestor de contraseñas).</li>
+                        <li><span class="strong-highlight">¡No la compartas con NADIE!</span></li>
+                        <li><span class="strong-highlight">Pérdida de la Clave Privada = Pérdida de Acceso:</span> No hay forma de recuperarla.</li>
+                    </ul>
+                </div>
+                <div class="feature-item">
+                    <i class='bx bx-globe'></i>
+                    <h3>Clave Pública: Tu Dirección de Billetera</h3>
+                    <p>Tu clave pública es tu dirección de billetera QchauCoin. Puedes compartirla libremente para recibir fondos y también descargarla desde tu cuenta.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+                <div class="section-block">
+                    <h2>2. Transacciones Seguras y Verificables</h2>
+                    <div class="feature-grid">
+                        <div class="feature-item">
+                            <i class='bx bx-fingerprint'></i>
+                            <h3>Firma Digital: Tu Autorización Garantizada</h3>
+                            <p>Cuando envías QchauCoins, tu navegador utiliza tu clave privada para crear una firma digital única para esa transacción, demostrando tu autorización.</p>
+                        </div>
+                        <div class="feature-item">
+                            <i class='bx bx-check-shield'></i>
+                            <h3>Verificación Criptográfica por el Sistema</h3>
+                            <p>Nuestro sistema verifica criptográficamente cada firma de transacción para asegurar su autenticidad e integridad.</p>
+                        </div>
+                        <div class="feature-item">
+                            <i class='bx bx-link-alt'></i>
+                            <h3>La Blockchain: Un Registro Inmutable</h3>
+                            <p>Cada transacción validada se añade a nuestra **blockchain**, un registro público y permanente. Una vez en la blockchain, no puede ser alterada ni eliminada.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section-block">
+                    <h2>3. Protección de Tu Cuenta y Datos Personales</h2>
+                    <div class="feature-grid">
+                        <div class="feature-item">
+                            <i class='bx bx-lock-alt'></i>
+                            <h3>Contraseñas Robustas y Hashing</h3>
+                            <p>Tu contraseña es cifrada con tecnología avanzada (`bcrypt`) y nunca se almacena en texto plano en nuestros servidores, protegiéndola al máximo.</p>
+                        </div>
+                        <div class="feature-item">
+                            <i class='bx bx-token'></i>
+                            <h3>Sesiones Seguras y Tokens (JWT)</h3>
+                            <p>Utilizamos tokens seguros (JWT) para tu sesión. Siempre cierra sesión, especialmente en dispositivos compartidos.</p>
+                        </div>
+                        <div class="feature-item">
+                            <i class='bx bx-lock'></i>
+                            <h3>Comunicaciones Seguras (HTTPS)</h3>
+                            <p>Toda la información que viaja entre tu navegador y nuestros servidores está protegida mediante cifrado HTTPS, previniendo interceptaciones.</p>
+                        </div>
+                        <div class="feature-item">
+                            <i class='bx bx-shield-alt'></i>
+                            <h3>Control de Acceso y Privacidad de Datos</h3>
+                            <p>Solo tú puedes ver tu información personal y transacciones. **Tu clave privada nunca se almacena en nuestros sistemas.** Tus datos son tratados con máxima confidencialidad.</p>
+                        </div>
+                    </div>
+                </div>
+
+<section class="content-sections">
+    <div class="container">
+        <div class="section-block">
+            <h2>4. Tu Responsabilidad es Clave</h2>
+            <div class="content-two-columns">
+                <div class="text-and-features-column">
+                    <p class="article-paragraph">
+                        La seguridad en el mundo de las criptomonedas es una responsabilidad compartida. Para proteger tus QchauCoins:
+                    </p>
+                    <ul class="article-list">
+                        <li class="article-list-item"><i class='bx bx-check-circle'></i> Mantén tu clave privada <span class="strong-highlight">SEGURA</span>.</li>
+                        <li class="article-list-item"><i class='bx bx-check-circle'></i> Usa contraseñas <span class="strong-highlight">fuertes y únicas</span>.</li>
+                        <li class="article-list-item"><i class='bx bx-check-circle'></i> Cuidado con el <span class="strong-highlight">phishing y las estafas</span>.</li>
+                        <li class="article-list-item"><i class='bx bx-check-circle'></i> Mantén tu software y navegador <span class="strong-highlight">actualizados</span>.</li>
+                        <li class="article-list-item"><i class='bx bx-check-circle'></i> <span class="strong-highlight">Cierra sesión</span> al terminar, especialmente en equipos públicos.</li>
+                    </ul>
+                </div>
+                <div class="image-column">
+                    <img src="Imagenes/securit.png" alt="Ilustración de seguridad y responsabilidad en criptomonedas" class="img-responsive">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section footer-about">
+                <h3 class="footer-title">QchauCoin</h3>
+                <p>
+                    La stablecoin innovadora para la economía mexicana, ofreciendo estabilidad y transparencia en tus transacciones.
+                </p>
+            </div>
+
+            <div class="footer-section footer-links">
+                <h3 class="footer-title">Enlaces Rápidos</h3>
+                <ul>
+                    <li><a href="index.html">¿Qué es QchauCoin?</a></li>
+                    <li><a href="volatilidad.html">Volatilidad</a></li>
+                    <li><a href="marcolegal.html">Marco Legal</a></li>
+                    <li><a href="seguridad-privacidad.html">Blockchain y Seguridad</a></li> <li><a href="wallets.html">Wallets</a></li>
+                </ul>
+            </div>
+
+
+            <div class="footer-section footer-contact">
+                <h3 class="footer-title">Contacto</h3>
+                <p>Email: info@qchaucoin.com</p>
+                <p>Teléfono: +52 55 1234 5678</p>
+                <p>Dirección: Radiador Springs, Ruta 66., Ciudad de México, México</p>
+            </div>
+
+            <div class="footer-section footer-social">
+                <h3 class="footer-title">Equipo Conformado por:</h3>
+                <div class="social-icons">
+                    <p>Erika Anaya</p>
+                    <p>Omar Gutiérrez</p>
+                    <p>Ximena Leon</p>
+                    <p>Marlon idk</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 QchauCoin. Todos los derechos reservados.</p>
+            <div class="footer-legal-links">
+                <a href="#">Política de Privacidad</a>
+                <a href="#">Términos de Servicio</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

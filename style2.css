@@ -1,0 +1,476 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+:root {
+    --primary-color: #192230;
+    --accent-color: #00bfa6;
+    --text-color: #c9c9c9;
+    --hover-color: #272832;
+    --box-color: #3D474E;
+    --mobile-bg: #2a2a2a;
+    --navbar-bg-color: #31363B;
+    --button-color: #232323f8;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Poppins, 'Segoe UI', sans-serif;
+    color: var(--text-color);
+    scroll-behavior: smooth;
+    background-color: var(--primary-color)
+}
+
+body {
+    background-color: #c9ffee; 
+    background: var(--primary-color); 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    color: #ddd;
+}
+header {
+    width: 100%; 
+    position: fixed; 
+    top: 0;
+    z-index: 100; 
+}
+
+header nav {
+    background-color: #111;
+    border-bottom: 1px solid var(--hover-color); 
+    display: flex; 
+    align-items: center; 
+    padding: 0 1em; 
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    width: 100%; 
+    justify-content: flex-end;
+    align-items: center;
+}
+
+header nav .home-li {
+    margin-right: auto;
+}
+
+header nav li {
+    display: flex;
+}
+
+header nav a {
+    display: flex;
+    text-decoration: none;
+    color: var(--text-color);
+    padding: 1em 2em;
+    transition: background-color 150ms ease;
+}
+
+header nav a:hover {
+    background-color: var(--hover-color);
+}
+
+header nav a.active-link {
+    border-bottom: 2px solid var(--text-color);
+}
+
+header nav a.accent-link {
+    background-color: var(--accent-color);
+}
+
+#open-sidebar-button {
+    display: none;
+    background: none;
+    border: none;
+    padding: 1em;
+    cursor: pointer;
+}
+
+#close-sidebar-button {
+    display: none;
+    background: none;
+    border: none;
+    padding: 1em;
+    cursor: pointer;
+}
+
+#overlay {
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    inset: 0;
+    z-index: 9;
+    display: none;
+}
+.skip-link {
+    opacity: 0;
+    pointer-events: none;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 1000;
+    background-color: var(--accent-color);
+    color: #ffffff;
+    padding: 12px 24px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: opacity 0.3s ease;
+}
+
+.skip-link:focus {
+    opacity: 1;
+    pointer-events: auto;
+    outline: 3px solid #ffffff;
+}
+
+@media screen and (max-width: 700px) {
+    #open-sidebar-button, #close-sidebar-button {
+        display: block;
+    }
+    header nav {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        height: 100vh;
+        width: min(15em, 100%);
+        z-index: 10;
+        border-left: 1px solid var(--hover-color);
+        transition: right 300ms ease-in-out;
+    }
+    header nav.show {
+        right: 0;
+    }
+    header nav.show ~ #overlay {
+        display: block;
+    }
+    header nav ul {
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    header nav a {
+        width: 100%;
+        padding-left: 2.5em;
+    }
+    header nav a.active-link {
+        border-bottom: none;
+    }
+    header nav .home-li {
+        margin-right: unset;
+    }
+}
+
+.container {
+    background-color: #fff;
+    border-radius: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+    position: relative;
+    overflow: hidden;
+    width: 768px;
+    max-width: 100%;
+    min-height: 480px;
+    margin-top: 60px; 
+    color: #333; 
+}
+
+.container p {
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.3px;
+    margin: 20px 0;
+}
+
+.container span {
+    font-size: 12px;
+}
+
+.container a {
+    color: #333;
+    font-size: 13px;
+    text-decoration: none;
+    margin: 15px 0 10px;
+}
+
+.container button {
+    background-color: #00bfa6;
+    color: #fff;
+    font-size: 12px;
+    padding: 10px 45px;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.container button:hover {
+    background-color: #008f7b;
+}
+
+.container button.hidden {
+    background-color: transparent;
+    border-color: #fff;
+}
+
+.container form {
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    height: 100%;
+}
+
+.container input {
+    background-color: #eee;
+    border: none;
+    margin: 8px 0;
+    padding: 10px 15px;
+    font-size: 13px;
+    border-radius: 8px;
+    width: 100%;
+    outline: none;
+}
+
+.form-container {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    transition: all 0.6s ease-in-out;
+}
+
+.sign-in {
+    left: 0;
+    width: 50%;
+    z-index: 2;
+}
+
+.container.active .sign-in {
+    transform: translateX(100%);
+}
+
+.sign-up {
+    left: 0;
+    width: 50%;
+    opacity: 0;
+    z-index: 1;
+}
+
+.container.active .sign-up {
+    transform: translateX(100%);
+    opacity: 1;
+    z-index: 5;
+    animation: move 0.6s;
+}
+
+@keyframes move {
+    0%, 49.99% {
+        opacity: 0;
+        z-index: 1;
+    }
+    50%, 100% {
+        opacity: 1;
+        z-index: 5;
+    }
+}
+
+.toggle-container {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    transition: all 0.6s ease-in-out;
+    border-radius: 150px 0 0 100px;
+    z-index: 1000;
+}
+
+.container.active .toggle-container {
+    transform: translateX(-100%);
+    border-radius: 0 150px 100px 0;
+}
+
+.toggle {
+    background-color: #00bfa6; 
+    height: 100%;
+    background: linear-gradient(to right, #c0be5c, #00bfa6);
+    color: #fff;
+    position: relative;
+    left: -100%;
+    height: 100%;
+    width: 200%;
+    transform: translateX(0);
+    transition: all 0.6s ease-in-out;
+}
+
+.container.active .toggle {
+    transform: translateX(50%);
+}
+
+.toggle-panel {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 30px;
+    text-align: center;
+    top: 0;
+    transform: translateX(0);
+    transition: all 0.6s ease-in-out;
+}
+
+.toggle-left {
+    transform: translateX(-200%);
+}
+
+.container.active .toggle-left {
+    transform: translateX(0);
+}
+
+.toggle-right {
+    right: 0;
+    transform: translateX(0);
+}
+
+.container.active .toggle-right {
+    transform: translateX(200%);
+}
+
+.send-money-wrapper {
+    background-color: var(--text-color-light);
+    padding: var(--spacing-lg);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-light);
+    width: 100%;
+    max-width: 500px; /* Ancho máximo para que no se extienda demasiado en pantallas grandes */
+    box-sizing: border-box; /* Incluir padding en el ancho total */
+    text-align: center; /* Centrar elementos de texto */
+    margin: var(--spacing-md) auto; /* Margen superior/inferior, y centrar horizontalmente */
+    flex-grow: 1; /* Permite que ocupe el espacio si body es flex column */
+}
+
+.send-money-wrapper h2 {
+    color: var(--primary-color);
+    margin-bottom: var(--spacing-md);
+    font-weight: 600;
+    font-size: 1.8em;
+}
+
+/* Estilos para la información del usuario (Clave Pública y Balance) */
+.send-money-wrapper p {
+    margin-bottom: var(--spacing-xs);
+    font-size: 1.1em;
+    color: #555;
+}
+
+.send-money-wrapper p span {
+    font-weight: 600;
+    color: var(--primary-color);
+    word-break: break-all; /* Rompe palabras largas para que no desborden */
+    display: block; /* Para que ocupe su propia línea si es muy largo */
+    margin-top: 5px;
+    font-size: 0.9em;
+}
+
+.send-money-wrapper hr {
+    border: none;
+    border-top: 1px solid var(--border-color);
+    margin: var(--spacing-md) 0;
+}
+
+/* Estilos para Labels, Inputs y Textareas */
+.send-money-wrapper label {
+    display: block; /* Hace que cada label ocupe su propia línea */
+    text-align: left; /* Alinea el texto de la label a la izquierda */
+    margin-top: var(--spacing-sm);
+    margin-bottom: var(--spacing-xs);
+    font-weight: 500;
+    color: #444;
+}
+
+.send-money-wrapper input[type="text"],
+.send-money-wrapper input[type="number"],
+.send-money-wrapper textarea {
+    width: calc(100% - 20px); /* Ancho completo menos el padding */
+    padding: 10px;
+    margin-bottom: var(--spacing-sm);
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    font-size: 1em;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box; /* Incluir padding y borde en el ancho */
+    transition: border-color 0.3s ease;
+}
+
+.send-money-wrapper input:focus,
+.send-money-wrapper textarea:focus {
+    border-color: var(--input-focus-border);
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(106, 90, 205, 0.2);
+}
+
+.send-money-wrapper textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+/* Estilos para el Botón de Enviar Transacción */
+#send-transaction-button {
+    background-color: var(--primary-color);
+    color: var(--text-color-light);
+    padding: 12px var(--spacing-lg);
+    border: none;
+    border-radius: var(--border-radius);
+    font-size: 1.1em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    width: 100%;
+    margin-top: var(--spacing-md);
+}
+
+#send-transaction-button:hover {
+    background-color: var(--button-hover-darken);
+    transform: translateY(-2px);
+}
+
+#send-transaction-button:active {
+    transform: translateY(0);
+}
+
+/* --- Media Queries para Send Money (Responsive Design) --- */
+@media (max-width: 600px) {
+    .send-money-wrapper {
+        margin: var(--spacing-md);
+        padding: var(--spacing-md);
+    }
+
+    .send-money-wrapper h2 {
+        font-size: 1.5em;
+    }
+
+    .send-money-wrapper p {
+        font-size: 1em;
+    }
+
+    #send-transaction-button {
+        font-size: 1em;
+        padding: 10px var(--spacing-md);
+    }
+}

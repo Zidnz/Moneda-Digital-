@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wallets de QchauCoin - Gestiona tu Moneda Digital Estable</title>
+    <link rel="icon" type="image/png" href="Frontend/Imagenes/IconoQchau.png">
+    <link rel="stylesheet" href="style3.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsrsasign/10.5.25/jsrsasign-all-min.js" defer></script>
+    <script src="wallets.js" defer></script>
+    <script src="script_login.js" defer></script>
+</head>
+<body>
+    <header>
+        <button id="open-sidebar-button" onclick="openSidebar()" aria-label="open sidebar" aria-expanded="false" aria-controls="navbar">
+          <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#c9c9c9"><path d="M165.13-254.62q-10.68 0-17.9-7.26-7.23-7.26-7.23-18t7.23-17.86q7.22-7.13 17.9-7.13h629.74q10.68 0 17.9 7.26 7.23 7.26 7.23 18t-7.23 17.87q-7.22 7.12-17.9 7.12H165.13Zm0-200.25q-10.68 0-17.9-7.27-7.23-7.26-7.23-17.99 0-10.74 7.23-17.87 7.22-7.13 17.9-7.13h629.74q10.68 0 17.9 7.27 7.23 7.26 7.23 17.99 0 10.74-7.23 17.87-7.22 7.13-17.9 7.13H165.13Zm0-200.26q-10.68 0-17.9-7.26-7.23-7.26-7.23-18t7.23-17.87q7.22-7.12 17.9-7.12h629.74q10.68 0 17.9 7.26 7.23 7.26 7.23 18t-7.23 17.86q-7.22 7.13-17.9 7.13H165.13Z"/></svg>
+        </button>
+
+        <nav id="navbar">
+            <ul>
+                <li>
+                    <button id="close-sidebar-button" onclick="closeSidebar()" aria-label="close sidebar">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#c9c9c9"><path d="m480-444.62-209.69 209.7q-7.23 7.23-17.5 7.42-10.27.19-17.89-7.42-7.61-7.62-7.61-17.7 0-10.07 7.61-17.69L444.62-480l-209.7-209.69q-7.23-7.23-7.42-17.5-.19-10.27 7.42-17.89 7.62-7.61 17.7-7.61 10.07 0 17.69 7.61L480-515.38l209.7 209.69q7.23 7.23 7.42 17.5.19 10.27-7.42 17.89-7.62 7.61-17.7 7.61-10.07 0-17.69-7.61L480-444.62Z"/></svg>
+                    </button>
+                </li>
+                <li class="home-li"><a class="active-link" aria-current="page" href="index.html">QchauCoin</a></li>
+                <li><a href="walletInfo.html">Acerca de</a></li>
+                <li><a href="marcolegal.html">Marco Legal</a></li>
+                <li><a href="security.html">Seguridad</a></li>
+                <li><a class="accent-link" href="login.html">Login</a></li>
+            </ul>
+        </nav>
+
+        <div id="overlay" onclick="closeSidebar()" aria-hidden="true"></div>
+    </header>
+
+    <main class="wallet-main-content">
+        <section id="user-dashboard">
+            <h1>Bienvenido a tu Wallet de QchauCoin</h1>
+            <p>Gestiona tus fondos de QchauCoin, la moneda digital estable respaldada por MXN y USD.</p>
+
+            <div class="dashboard-overview">
+                <div class="card current-value-card">
+                    <h3>Valor Actual de QchauCoin</h3>
+                    <p class="value-display">1 QchauCoin &asymp; <span id="qccValueMXN">1.00 MXN</span></p>
+                    <p class="value-display">1 QchauCoin &asymp; <span id="qccValueUSD">0.0585 USD</span></p>
+                    <p class="info-text">Basado en el respaldo del 70% MXN y 30% USD. Los valores se ajustan según la inflación simulada.</p>
+                </div>
+                <div class="card balance-card">
+                    <h3>Tu Saldo Total</h3>
+                    <p class="balance-amount"><span id="userBalance">0.00</span> QchauCoin</p>
+                    <p class="balance-fiat-equivalence">(<span id="userBalanceMXN">0.00</span> MXN aprox. / <span id="userBalanceUSD">0.00</span> USD aprox.)</p>
+                    <div class="wallet-address-section">
+                            <h4>Tu Dirección de QchauCoin (Clave Pública)</h4>
+                            <div class="address-display">
+                                <span id="walletPublicKey" class="copyable-text">Cargando...</span>
+                                <button id="copyPublicKeyBtn" class="copy-button">Copiar</button>
+                        </div>
+                        <p class="info-text">Usa esta dirección para recibir QchauCoins.</p>
+                        <div class="download-key-container">
+                                <button id="downloadPublicKeyBtn" class="action-button secondary">Descargar Clave Pública (.pem)</button>
+                        </div>
+                </div>
+                </div>
+            </div>
+ <div class="dashboard-actions">
+    <div class="card send-qcc-card">
+        <h3>Enviar QchauCoin</h3>
+        <div class="form-group">
+            <label for="destinatarioPublicKeyFile">Dirección del Destinatario (Clave Pública):</label>
+            <input type="file" id="destinatarioPublicKeyFile" accept=".pem">
+            <label for="destinatarioPublicKeyFile" class="file-upload-button">Elegir archivo</label> 
+        </div>
+        <div class="form-group">
+            <label for="cantidadEnviar">Cantidad a Enviar (QchauCoin):</label>
+            <input type="number" id="cantidadEnviar" placeholder="Ej. 10.5" step="0.01" required>
+        </div>
+        <div class="form-group">
+            <label for="privateKeyFile">Cargar Tu Clave Privada (.pem):</label>
+            <input type="file" id="privateKeyFile" accept=".pem">
+            <label for="privateKeyFile" class="file-upload-button">Elegir archivo</label>
+        </div>
+        <p class="advertencia">¡Advertencia! Tu clave privada es la llave de tus fondos. Nunca la compartas ni la pierdas. No la almacenamos.</p>
+        <button class="copy-button" id="sendQchauCoinBtn">Enviar QchauCoin</button>
+        <p id="transactionMessage" class="message"></p>
+        <p id="transactionError" class="error-message"></p>
+    </div>
+    <div class="card transaction-history-card">
+        <h3>Historial de Transacciones</h3>
+        <ul id="transactionsList">
+            <li class="no-transactions">No hay transacciones recientes.</li>
+        </ul>
+        <button class="action-button secondary" onclick="loadTransactionHistory()">Actualizar Historial</button>
+    </div>
+</div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section footer-about">
+                <h3 class="footer-title">QchauCoin</h3>
+                <p>
+                    La stablecoin innovadora para la economía mexicana, ofreciendo estabilidad y transparencia en tus transacciones.
+                </p>
+            </div>
+
+            <div class="footer-section footer-links">
+                <h3 class="footer-title">Enlaces Rápidos</h3>
+                <ul>
+                    <li><a href="index.html">¿Qué es QchauCoin?</a></li>
+                    <li><a href="volatilidad.html">Volatilidad</a></li>
+                    <li><a href="marcolegal.html">Marco Legal</a></li>
+                    <li><a href="security.html">Blockchain y Seguridad</a></li>
+                    <li><a href="wallets.html">Wallets</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section footer-contact">
+                <h3 class="footer-title">Contacto</h3>
+                <p>Email: info@qchaucoin.com</p>
+                <p>Teléfono: +52 55 1234 5678</p>
+                <p>Dirección: Radiador Springs, Ruta 66., Ciudad de México, México</p>
+            </div>
+
+            <div class="footer-section footer-social">
+                <h3 class="footer-title">Equipo Conformado por:</h3>
+                <div class="social-icons">
+                    <p>Erika Anaya</p>
+                    <p>Omar Gutiérrez</p>
+                    <p>Ximena Leon</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 QchauCoin. Todos los derechos reservados.</p>
+            <div class="footer-legal-links">
+                <a href="#">Política de Privacidad</a>
+                <a href="#">Términos de Servicio</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

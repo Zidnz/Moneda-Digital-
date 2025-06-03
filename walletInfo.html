@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¿Cómo funciona el Wallet de QchauCoin?</title>
+    <link rel="icon" type="image/png" href="Imagenes\IconoQchau.png">
+    <link rel="stylesheet" href="styles-security.css"> <script src="script_login.js" defer></script>
+    <script src="wallets.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+   <header>
+        <button id="open-sidebar-button" onclick="openSidebar()" aria-label="open sidebar" aria-expanded="false" aria-controls="navbar">
+            <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#c9c9c9"><path d="M165.13-254.62q-10.68 0-17.9-7.26-7.23-7.26-7.23-18t7.23-17.86q7.22-7.13 17.9-7.13h629.74q10.68 0 17.9 7.26 7.23 7.26 7.23 18t-7.23 17.87q-7.22 7.12-17.9 7.12H165.13Zm0-200.25q-10.68 0-17.9-7.27-7.23-7.26-7.23-17.99 0-10.74 7.23-17.87 7.22-7.13 17.9-7.13h629.74q10.68 0 17.9 7.27 7.23 7.26 7.23 17.99 0 10.74-7.23 17.87-7.22 7.13-17.9 7.13H165.13Zm0-200.26q-10.68 0-17.9-7.26-7.23-7.26-7.23-18t7.23-17.87q7.22-7.12 17.9-7.12h629.74q10.68 0 17.9 7.26 7.23 7.26 7.23 18t-7.23 17.86q-7.22 7.13-17.9 7.13H165.13Z"/></svg>
+        </button>
+
+        <nav id="navbar">
+            <ul>
+                <li>
+                    <button id="close-sidebar-button" onclick="closeSidebar()" aria-label="close sidebar">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#c9c9c9"><path d="m480-444.62-209.69 209.7q-7.23 7.23-17.5 7.42-10.27.19-17.89-7.42-7.61-7.62-7.61-17.7 0-10.07 7.61-17.69L444.62-480l-209.7-209.69q-7.23-7.23-7.42-17.5-.19-10.27 7.42-17.89 7.62-7.61 17.7-7.61 10.07 0 17.69 7.61L480-515.38l209.69-209.7q7.23-7.23 17.5-7.42 10.27-.19 17.89 7.42 7.61 7.62 7.61 17.7 0 10.07-7.61 17.69L515.38-480l209.7 209.69q7.23 7.23 7.42 17.5.19 10.27-7.42 17.89-7.62 7.61-17.7 7.61-10.07 0-17.69-7.61L480-444.62Z"/></svg>
+                    </button>
+                </li>
+                <li class="home-li"><a href="index.html">QchauCoin</a></li>
+                <li><a href="marcolegal.html">Marco Legal</a></li>
+                <li><a href="security.html">Seguridad</a></li>
+                <li><a href="Volatilidad.html">¿StableCoins?</a></li>
+                <li><a class="active-link" aria-current="page" href="walletInfo.html">Wallet</a></li> <li><a class="accent-link" href="login.html">Login</a></li>
+            </ul>
+        </nav>
+
+        <div id="overlay" onclick="closeSidebar()" aria-hidden="true"></div>
+    </header>
+
+    <main class="content-sections"> <section class="section-block" id="que-es-wallet">
+            <h2><i class="bx bx-wallet"></i> ¿Qué es una Wallet de QchauCoin?</h2> <div class="article-block"> <p class="article-paragraph">
+                    Una Wallet de QchauCoin es una herramienta digital que te permite almacenar, enviar y recibir tus QchauCoins de forma segura. A diferencia de las billeteras físicas, una wallet de criptomonedas no guarda las monedas en sí, sino las "claves" que te dan acceso a tus fondos en la blockchain.
+                </p>
+                <h3 class="article-subheading">Componentes Clave:</h3> <ul class="article-list">
+                    <li class="article-list-item"><i class='bx bx-key'></i> <p><span class="strong-highlight">Clave Pública (Dirección de la Wallet):</span> Es como tu número de cuenta bancaria. Puedes compartirla libremente con otros para que te envíen QchauCoins. Es una cadena alfanumérica única que identifica tu monedero en la blockchain.</p></li>
+                    <li class="article-list-item"><i class='bx bx-lock-alt'></i> <p><span class="strong-highlight">Clave Privada:</span> Esta es la más importante. Es como tu contraseña secreta o el PIN de tu tarjeta bancaria. <span class="strong-highlight">¡Nunca la compartas con nadie!</span> La clave privada te permite <span class="strong-highlight">firmar transacciones</span> y demostrar que eres el propietario de tus QchauCoins, autorizando su movimiento.</p></li>
+                </ul>
+                <p class="article-paragraph">
+                    La seguridad de tus QchauCoins reside en la protección de tu <span class="strong-highlight">clave privada</span>. Si alguien la obtiene, podría acceder a tus fondos.
+                </p>
+            </div>
+        </section>
+
+        <section class="section-block" id="como-funciona">
+            <h2><i class="bx bx-cog"></i> ¿Cómo funciona una Wallet de QchauCoin?</h2> <div class="article-block"> <p class="article-paragraph">El funcionamiento de una wallet de QchauCoin se basa en principios criptográficos y la interacción con nuestra blockchain simulada:</p>
+
+                <h3 class="article-subheading">1. Creación de una Wallet</h3>
+                <p class="article-paragraph">Cuando creas una wallet, se genera un par único de claves criptográficas (pública y privada) utilizando el sistema de encriptado <span class="strong-highlight">RSA</span>. Este proceso asegura que cada wallet sea única y que las claves estén matemáticamente vinculadas de forma segura.</p>
+
+                <h3 class="article-subheading">2. Envío de QchauCoin</h3>
+                <p class="article-paragraph">Para enviar QchauCoins, necesitas la <span class="strong-highlight">dirección de la wallet (clave pública)</span> del destinatario y la cantidad que deseas transferir. Tu wallet utiliza tu <span class="strong-highlight">clave privada</span> para "firmar" digitalmente la transacción. Esta firma criptográfica demuestra que eres el propietario de las QchauCoins y que autorizas el movimiento. La transacción firmada se envía a la red de QchauCoin, donde los nodos la verifican y la añaden a un nuevo bloque en la blockchain.</p>
+
+                <h3 class="article-subheading">3. Recepción de QchauCoin</h3>
+                <p class="article-paragraph">Recibir QchauCoins es sencillo. Solo necesitas compartir tu <span class="strong-highlight">dirección de wallet (clave pública)</span> con el remitente. Una vez que la transacción es confirmada en la blockchain, las QchauCoins aparecerán en el saldo de tu wallet, disponibles para ser utilizadas.</p>
+
+                <p class="article-paragraph">El sistema <span class="strong-highlight">RSA</span> es fundamental en este proceso, ya que garantiza que las transacciones sean inmutables, que solo el propietario de la clave privada pueda autorizar un gasto y que la información transmitida sea segura y auténtica.</p>
+            </div>
+        </section>
+
+        <section class="section-block" id="tipos-wallets">
+            <h2><i class="bx bx-category"></i> Tipos de Wallets</h2> <div class="feature-grid"> <div class="wallet-type-card feature-item"> <h3>Wallet de Escritorio (Desktop Wallet)</h3>
+                    <p>Un software que instalas directamente en tu computadora. Ofrece el mayor control sobre tus claves, ya que se almacenan localmente en tu dispositivo. Ideal para quienes buscan un alto nivel de seguridad y no necesitan acceder a sus QchauCoins constantemente desde diferentes lugares.</p>
+                </div>
+                <div class="wallet-type-card feature-item">
+                    <h3>Wallet Móvil (Mobile Wallet)</h3>
+                    <p>Una aplicación para tu smartphone. Permite la comodidad de realizar transacciones en cualquier lugar y en cualquier momento. Perfecta para pagos rápidos y para llevar tus QchauCoins contigo en el día a día.</p>
+                </div>
+                <div class="wallet-type-card feature-item">
+                    <h3>Wallet Web (Web Wallet)</h3>
+                    <p>Accesible directamente desde un navegador web. Son las más fáciles de usar y te permiten acceder a tus QchauCoins desde cualquier dispositivo con conexión a internet.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    </body>
+</html>
