@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="620" viewBox="0 0 1100 620">
+<rect width="100%" height="100%" fill="#f8fafc" />
+<text x="550.0" y="45" text-anchor="middle" font-family="Segoe UI, Arial" font-size="26" fill="#0f172a">Score de liquidez por moneda</text>
+<line x1="95" y1="505" x2="1055" y2="505" stroke="#334155" />
+<line x1="95" y1="95" x2="95" y2="505" stroke="#334155" />
+<rect x="119.00" y="95.00" width="89.14" height="410.00" rx="6" fill="#10b981" />
+<text x="163.57142857142856" y="87.0" text-anchor="middle" font-family="Segoe UI, Arial" font-size="11" fill="#475569">95.00</text>
+<text x="163.57142857142856" y="533" text-anchor="middle" font-family="Segoe UI, Arial" font-size="12" fill="#334155">Tether</text>
+<rect x="256.14" y="107.95" width="89.14" height="397.05" rx="6" fill="#10b981" />
+<text x="300.71428571428567" y="99.9473684210526" text-anchor="middle" font-family="Segoe UI, Arial" font-size="11" fill="#475569">92.00</text>
+<text x="300.71428571428567" y="533" text-anchor="middle" font-family="Segoe UI, Arial" font-size="12" fill="#334155">USDC</text>
+<rect x="393.29" y="185.63" width="89.14" height="319.37" rx="6" fill="#10b981" />
+<text x="437.85714285714283" y="177.63157894736844" text-anchor="middle" font-family="Segoe UI, Arial" font-size="11" fill="#475569">74.00</text>
+<text x="437.85714285714283" y="533" text-anchor="middle" font-family="Segoe UI, Arial" font-size="12" fill="#334155">Dai</text>
+<rect x="530.43" y="241.74" width="89.14" height="263.26" rx="6" fill="#10b981" />
+<text x="575.0" y="233.73684210526318" text-anchor="middle" font-family="Segoe UI, Arial" font-size="11" fill="#475569">61.00</text>
+<text x="575.0" y="533" text-anchor="middle" font-family="Segoe UI, Arial" font-size="12" fill="#334155">PAX Gold</text>
+<rect x="667.57" y="267.63" width="89.14" height="237.37" rx="6" fill="#10b981" />
+<text x="712.1428571428571" y="259.63157894736844" text-anchor="middle" font-family="Segoe UI, Arial" font-size="11" fill="#475569">55.00</text>
+<text x="712.1428571428571" y="533" text-anchor="middle" font-family="Segoe UI, Arial" font-size="12" fill="#334155">Stables Labs USDX</text>
+<rect x="804.71" y="254.68" width="89.14" height="250.32" rx="6" fill="#10b981" />
+<text x="849.2857142857142" y="246.68421052631578" text-anchor="middle" font-family="Segoe UI, Arial" font-size="11" fill="#475569">58.00</text>
+<text x="849.2857142857142" y="533" text-anchor="middle" font-family="Segoe UI, Arial" font-size="12" fill="#334155">TrueUSD</text>
+<rect x="941.86" y="297.84" width="89.14" height="207.16" rx="6" fill="#10b981" />
+<text x="986.4285714285714" y="289.8421052631579" text-anchor="middle" font-family="Segoe UI, Arial" font-size="11" fill="#475569">48.00</text>
+<text x="986.4285714285714" y="533" text-anchor="middle" font-family="Segoe UI, Arial" font-size="12" fill="#334155">QchauCoin</text>
+</svg>

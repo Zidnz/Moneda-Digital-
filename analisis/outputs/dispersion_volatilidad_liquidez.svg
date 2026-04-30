@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1050" height="650" viewBox="0 0 1050 650">
+<rect width="100%" height="100%" fill="#f8fafc" />
+<text x="525.0" y="45" text-anchor="middle" font-family="Segoe UI, Arial" font-size="26" fill="#0f172a">Volatilidad vs liquidez por stablecoin</text>
+<line x1="105" y1="555" x2="980" y2="555" stroke="#334155" />
+<line x1="105" y1="90" x2="105" y2="555" stroke="#334155" />
+<text x="525.0" y="615" text-anchor="middle" font-family="Segoe UI, Arial" font-size="15" fill="#0f172a">Volatilidad 30 dias (%)</text>
+<text x="30" y="325.0" text-anchor="middle" font-family="Segoe UI, Arial" font-size="15" fill="#334155">Liquidez</text>
+<circle cx="192.50" cy="90.00" r="11.00" fill="#22c55e" opacity="0.82" />
+<text x="202.5" y="80.0" text-anchor="start" font-family="Segoe UI, Arial" font-size="12" fill="#334155">Tether</text>
+<circle cx="105.00" cy="119.68" r="9.00" fill="#22c55e" opacity="0.82" />
+<text x="115.0" y="109.68085106382978" text-anchor="start" font-family="Segoe UI, Arial" font-size="12" fill="#334155">USDC</text>
+<circle cx="586.25" cy="297.77" r="13.00" fill="#f97316" opacity="0.82" />
+<text x="596.25" y="287.7659574468085" text-anchor="start" font-family="Segoe UI, Arial" font-size="12" fill="#334155">Dai</text>
+<circle cx="877.92" cy="426.38" r="13.00" fill="#f97316" opacity="0.82" />
+<text x="887.9166666666667" y="416.3829787234042" text-anchor="start" font-family="Segoe UI, Arial" font-size="12" fill="#334155">PAX Gold</text>
+<circle cx="980.00" cy="485.74" r="15.00" fill="#ef4444" opacity="0.82" />
+<text x="990.0" y="475.74468085106383" text-anchor="start" font-family="Segoe UI, Arial" font-size="12" fill="#334155">Stables Labs USDX</text>
+<circle cx="338.33" cy="456.06" r="13.00" fill="#f97316" opacity="0.82" />
+<text x="348.33333333333337" y="446.06382978723406" text-anchor="start" font-family="Segoe UI, Arial" font-size="12" fill="#334155">TrueUSD</text>
+<circle cx="250.83" cy="555.00" r="11.00" fill="#22c55e" opacity="0.82" />
+<text x="260.83333333333337" y="545.0" text-anchor="start" font-family="Segoe UI, Arial" font-size="12" fill="#334155">QchauCoin</text>
+</svg>

@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="820" viewBox="0 0 820 820">
+<rect width="100%" height="100%" fill="#f8fafc" />
+<text x="410.0" y="55" text-anchor="middle" font-family="Segoe UI, Arial" font-size="26" fill="#0f172a">Mapa de calor de correlaciones</text>
+<text x="206.0" y="102" text-anchor="middle" font-family="Segoe UI, Arial" font-size="13" fill="#0f172a">cap</text>
+<text x="147" y="165.0" text-anchor="end" font-family="Segoe UI, Arial" font-size="13" fill="#0f172a">cap</text>
+<text x="288.0" y="102" text-anchor="middle" font-family="Segoe UI, Arial" font-size="13" fill="#0f172a">vol</text>
+<text x="147" y="247.0" text-anchor="end" font-family="Segoe UI, Arial" font-size="13" fill="#0f172a">vol</text>
+<text x="370.0" y="102" text-anchor="middle" font-family="Segoe UI, Arial" font-size="13" fill="#0f172a">fiat</text>
+<text x="147" y="329.0" text-anchor="end" font-family="Segoe UI, Arial" font-size="13" fill="#0f172a">fiat</text>
+<text x="452.0" y="102" text-anchor="middle" font-family="Segoe UI, Arial" font-size="13" fill="#0f172a">crypto</text>
+<text x="147" y="411.0" text-anchor="end" font-family="Segoe UI, Arial" font-size="13" fill="#0f172a">crypto</text>
+<text x="534.0" y="102" text-anchor="middle" font-family="Segoe UI, Arial" font-size="13" fill="#0f172a">volat</text>
+<text x="147" y="493.0" text-anchor="end" font-family="Segoe UI, Arial" font-size="13" fill="#0f172a">volat</text>
+<text x="616.0" y="102" text-anchor="middle" font-family="Segoe UI, Arial" font-size="13" fill="#0f172a">liq</text>
+<text x="147" y="575.0" text-anchor="end" font-family="Segoe UI, Arial" font-size="13" fill="#0f172a">liq</text>
+<text x="698.0" y="102" text-anchor="middle" font-family="Segoe UI, Arial" font-size="13" fill="#0f172a">riesgo</text>
+<text x="147" y="657.0" text-anchor="end" font-family="Segoe UI, Arial" font-size="13" fill="#0f172a">riesgo</text>
+<rect x="165" y="120" width="82" height="82" fill="rgb(165,125,245)" stroke="#ffffff" />
+<text x="206.0" y="166.0" text-anchor="middle" font-family="Segoe UI, Arial" font-size="13" fill="#0f172a">1.00</text>
+<rect x="247" y="120" width="82" height="82" fill="rgb(168,129,245)" stroke="#ffffff" />
+<text x="288.0" y="166.0" text-anchor="middle" font-family="Segoe UI, Arial" font-size="13" fill="#0f172a">0.96</text>
+<rect x="329" y="120" width="82" height="82" fill="rgb(204,177,245)" stroke="#ffffff" />
+<text x="370.0" y="166.0" text-anchor="middle" font-family="Segoe UI, Arial" font-size="13" fill="#0f172a">0.56</text>
+<rect x="411" y="120" width="82" height="82" fill="rgb(245,203,224)" stroke="#ffffff" />
+<text x="452.0" y="166.0" text-anchor="middle" font-family="Segoe UI, Arial" font-size="13" fill="#0f172a">-0.34</text>
+<rect x="493" y="120" width="82" height="82" fill="rgb(245,180,206)" stroke="#ffffff" />
+<text x="534.0" y="166.0" text-anchor="middle" font-family="Segoe UI, Arial" font-size="13" fill="#0f172a">-0.54</text>
+<rect x="575" y="120" width="82" height="82" fill="rgb(179,144,245)" stroke="#ffffff" />
+<text x="616.0" y="166.0" text-anchor="middle" font-family="Segoe UI, Arial" font-size="13" fill="#0f172a">0.83</text>
+<rect x="657" y="120" width="82" height="82" fill="rgb(245,181,207)" stroke="#ffffff" />
+<text x="698.0" y="166.0" text-anchor="middle" font-family="Segoe UI, Arial" font-size="13" fill="#0f172a">-0.53</text>
+<rect x="165" y="202" width="82" height="82" fill="rgb(168,129,245)" stroke="#ffffff" />
+<text x="206.0" y="248.0" text-anchor="middle" font-family="Segoe UI, Arial" font-size="13" fill="#0f172a">0.96</text>
+<rect x="247" y="202" width="82" height="82" fill="rgb(165,124,245)" stroke="#ffffff" />
+<text x="288.0" y="248.0" text-anchor="middle" font-family="Segoe UI, Arial" font-size="13" fill="#0f172a">1.00</text>
+<rect x="329" y="202" width="82" height="82" fill="rgb(213,189,245)" stroke="#ffffff" />
+<text x="370.0" y="248.0" text-anchor="middle" font-family="Segoe UI, Arial" font-size="13" fill="#0f172a">0.47</text>
+<rect x="411" y="202" width="82" height="82" fill="rgb(245,210,228)" stroke="#ffffff" />
+<text x="452.0" y="248.0" text-anchor="middle" font-family="Segoe UI, Arial" font-size="13" fill="#0f172a">-0.29</text>
+<rect x="493" y="202" width="82" height="82" fill="rgb(245,194,216)" stroke="#ffffff" />
+<text x="534.0" y="248.0" text-anchor="middle" font-family="Segoe UI, Arial" font-size="13" fill="#0f172a">-0.42</text>
+<rect x="575" y="202" width="82" height="82" fill="rgb(192,161,245)" stroke="#ffffff" />
+<text x="616.0" y="248.0" text-anchor="middle" font-family="Segoe UI, Arial" font-size="13" fill="#0f172a">0.70</text>
+<rect x="657" y="202" width="82" height="82" fill="rgb(245,203,223)" stroke="#ffffff" />
+<text x="698.0" y="248.0" text-anchor="middle" font-family="Segoe UI, Arial" font-size="13" fill="#0f172a">-0.35</text>
+<rect x="165" y="284" width="82" height="82" fill="rgb(204,177,245)" stroke="#ffffff" />
+<text x="206.0" y="330.0" text-anchor="middle" font-family="Segoe UI, Arial" font-size="13" fill="#0f172a">0.56</text>
+<rect x="247" y="284" width="82" height="82" fill="rgb(213,189,245)" stroke="#ffffff" />
+<text x="288.0" y="330.0" text-anchor="middle" font-family="Segoe UI, Arial" font-size="13" fill="#0f172a">0.47</text>
+<rect x="329" y="284" width="82" height="82" fill="rgb(165,125,245)" stroke="#ffffff" />
+<text x="370.0" y="330.0" text-anchor="middle" font-family="Segoe UI, Arial" font-size="13" fill="#0f172a">1.00</text>
+<rect x="411" y="284" width="82" height="82" fill="rgb(245,159,190)" stroke="#ffffff" />
+<text x="452.0" y="330.0" text-anchor="middle" font-family="Segoe UI, Arial" font-size="13" fill="#0f172a">-0.71</text>
+<rect x="493" y="284" width="82" height="82" fill="rgb(245,136,173)" stroke="#ffffff" />
+<text x="534.0" y="330.0" text-anchor="middle" font-family="Segoe UI, Arial" font-size="13" fill="#0f172a">-0.91</text>
+<rect x="575" y="284" width="82" height="82" fill="rgb(217,195,245)" stroke="#ffffff" />
+<text x="616.0" y="330.0" text-anchor="middle" font-family="Segoe UI, Arial" font-size="13" fill="#0f172a">0.42</text>
+<rect x="657" y="284" width="82" height="82" fill="rgb(245,159,190)" stroke="#ffffff" />
+<text x="698.0" y="330.0" text-anchor="middle" font-family="Segoe UI, Arial" font-size="13" fill="#0f172a">-0.71</text>
+<rect x="165" y="366" width="82" height="82" fill="rgb(245,203,224)" stroke="#ffffff" />
+<text x="206.0" y="412.0" text-anchor="middle" font-family="Segoe UI, Arial" font-size="13" fill="#0f172a">-0.34</text>
+<rect x="247" y="366" width="82" height="82" fill="rgb(245,210,228)" stroke="#ffffff" />
+<text x="288.0" y="412.0" text-anchor="middle" font-family="Segoe UI, Arial" font-size="13" fill="#0f172a">-0.29</text>
+<rect x="329" y="366" width="82" height="82" fill="rgb(245,159,190)" stroke="#ffffff" />
+<text x="370.0" y="412.0" text-anchor="middle" font-family="Segoe UI, Arial" font-size="13" fill="#0f172a">-0.71</text>
+<rect x="411" y="366" width="82" height="82" fill="rgb(165,125,245)" stroke="#ffffff" />
+<text x="452.0" y="412.0" text-anchor="middle" font-family="Segoe UI, Arial" font-size="13" fill="#0f172a">1.00</text>
+<rect x="493" y="366" width="82" height="82" fill="rgb(200,172,245)" stroke="#ffffff" />
+<text x="534.0" y="412.0" text-anchor="middle" font-family="Segoe UI, Arial" font-size="13" fill="#0f172a">0.61</text>
+<rect x="575" y="366" width="82" height="82" fill="rgb(245,225,240)" stroke="#ffffff" />
+<text x="616.0" y="412.0" text-anchor="middle" font-family="Segoe UI, Arial" font-size="13" fill="#0f172a">-0.17</text>
+<rect x="657" y="366" width="82" height="82" fill="rgb(196,167,245)" stroke="#ffffff" />
+<text x="698.0" y="412.0" text-anchor="middle" font-family="Segoe UI, Arial" font-size="13" fill="#0f172a">0.65</text>
+<rect x="165" y="448" width="82" height="82" fill="rgb(245,180,206)" stroke="#ffffff" />
+<text x="206.0" y="494.0" text-anchor="middle" font-family="Segoe UI, Arial" font-size="13" fill="#0f172a">-0.54</text>
+<rect x="247" y="448" width="82" height="82" fill="rgb(245,194,216)" stroke="#ffffff" />
+<text x="288.0" y="494.0" text-anchor="middle" font-family="Segoe UI, Arial" font-size="13" fill="#0f172a">-0.42</text>
+<rect x="329" y="448" width="82" height="82" fill="rgb(245,136,173)" stroke="#ffffff" />
+<text x="370.0" y="494.0" text-anchor="middle" font-family="Segoe UI, Arial" font-size="13" fill="#0f172a">-0.91</text>
+<rect x="411" y="448" width="82" height="82" fill="rgb(200,172,245)" stroke="#ffffff" />
+<text x="452.0" y="494.0" text-anchor="middle" font-family="Segoe UI, Arial" font-size="13" fill="#0f172a">0.61</text>
+<rect x="493" y="448" width="82" height="82" fill="rgb(165,125,245)" stroke="#ffffff" />
+<text x="534.0" y="494.0" text-anchor="middle" font-family="Segoe UI, Arial" font-size="13" fill="#0f172a">1.00</text>
+<rect x="575" y="448" width="82" height="82" fill="rgb(245,184,209)" stroke="#ffffff" />
+<text x="616.0" y="494.0" text-anchor="middle" font-family="Segoe UI, Arial" font-size="13" fill="#0f172a">-0.51</text>
+<rect x="657" y="448" width="82" height="82" fill="rgb(176,140,245)" stroke="#ffffff" />
+<text x="698.0" y="494.0" text-anchor="middle" font-family="Segoe UI, Arial" font-size="13" fill="#0f172a">0.87</text>
+<rect x="165" y="530" width="82" height="82" fill="rgb(179,144,245)" stroke="#ffffff" />
+<text x="206.0" y="576.0" text-anchor="middle" font-family="Segoe UI, Arial" font-size="13" fill="#0f172a">0.83</text>
+<rect x="247" y="530" width="82" height="82" fill="rgb(192,161,245)" stroke="#ffffff" />
+<text x="288.0" y="576.0" text-anchor="middle" font-family="Segoe UI, Arial" font-size="13" fill="#0f172a">0.70</text>
+<rect x="329" y="530" width="82" height="82" fill="rgb(217,195,245)" stroke="#ffffff" />
+<text x="370.0" y="576.0" text-anchor="middle" font-family="Segoe UI, Arial" font-size="13" fill="#0f172a">0.42</text>
+<rect x="411" y="530" width="82" height="82" fill="rgb(245,225,240)" stroke="#ffffff" />
+<text x="452.0" y="576.0" text-anchor="middle" font-family="Segoe UI, Arial" font-size="13" fill="#0f172a">-0.17</text>
+<rect x="493" y="530" width="82" height="82" fill="rgb(245,184,209)" stroke="#ffffff" />
+<text x="534.0" y="576.0" text-anchor="middle" font-family="Segoe UI, Arial" font-size="13" fill="#0f172a">-0.51</text>
+<rect x="575" y="530" width="82" height="82" fill="rgb(165,125,245)" stroke="#ffffff" />
+<text x="616.0" y="576.0" text-anchor="middle" font-family="Segoe UI, Arial" font-size="13" fill="#0f172a">1.00</text>
+<rect x="657" y="530" width="82" height="82" fill="rgb(245,172,200)" stroke="#ffffff" />
+<text x="698.0" y="576.0" text-anchor="middle" font-family="Segoe UI, Arial" font-size="13" fill="#0f172a">-0.60</text>
+<rect x="165" y="612" width="82" height="82" fill="rgb(245,181,207)" stroke="#ffffff" />
+<text x="206.0" y="658.0" text-anchor="middle" font-family="Segoe UI, Arial" font-size="13" fill="#0f172a">-0.53</text>
+<rect x="247" y="612" width="82" height="82" fill="rgb(245,203,223)" stroke="#ffffff" />
+<text x="288.0" y="658.0" text-anchor="middle" font-family="Segoe UI, Arial" font-size="13" fill="#0f172a">-0.35</text>
+<rect x="329" y="612" width="82" height="82" fill="rgb(245,159,190)" stroke="#ffffff" />
+<text x="370.0" y="658.0" text-anchor="middle" font-family="Segoe UI, Arial" font-size="13" fill="#0f172a">-0.71</text>
+<rect x="411" y="612" width="82" height="82" fill="rgb(196,167,245)" stroke="#ffffff" />
+<text x="452.0" y="658.0" text-anchor="middle" font-family="Segoe UI, Arial" font-size="13" fill="#0f172a">0.65</text>
+<rect x="493" y="612" width="82" height="82" fill="rgb(176,140,245)" stroke="#ffffff" />
+<text x="534.0" y="658.0" text-anchor="middle" font-family="Segoe UI, Arial" font-size="13" fill="#0f172a">0.87</text>
+<rect x="575" y="612" width="82" height="82" fill="rgb(245,172,200)" stroke="#ffffff" />
+<text x="616.0" y="658.0" text-anchor="middle" font-family="Segoe UI, Arial" font-size="13" fill="#0f172a">-0.60</text>
+<rect x="657" y="612" width="82" height="82" fill="rgb(165,125,245)" stroke="#ffffff" />
+<text x="698.0" y="658.0" text-anchor="middle" font-family="Segoe UI, Arial" font-size="13" fill="#0f172a">1.00</text>
+</svg>
